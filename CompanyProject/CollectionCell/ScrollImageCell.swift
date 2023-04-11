@@ -13,7 +13,16 @@ class ScrollImageCell: UICollectionViewCell {
     
     @IBOutlet weak var scrollImg: UIImageView!
     
+    
+    @IBOutlet weak var container: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        container.layer.cornerRadius = 100
+        //contentView.layer.masksToBounds = false
+        container.clipsToBounds = true
+        self.layer.cornerRadius = 20
+        self.clipsToBounds = true
+        print(container.layer.cornerRadius)
     }
 }
