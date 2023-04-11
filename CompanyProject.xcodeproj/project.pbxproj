@@ -13,6 +13,8 @@
 		CE00033E29E42204008406CB /* DoctorDetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00033D29E42204008406CB /* DoctorDetailTableCell.swift */; };
 		CE00034029E42227008406CB /* DoctorCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00033F29E42227008406CB /* DoctorCollectionCell.swift */; };
 		CE00034329E426DB008406CB /* AllData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00034229E426DB008406CB /* AllData.swift */; };
+		CE991EA029E5145A00B58D2B /* ScrollImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE991E9F29E5145A00B58D2B /* ScrollImageCell.swift */; };
+		CE991EA229E52B7300B58D2B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE991EA129E52B7300B58D2B /* MainTabBarController.swift */; };
 		CECC7DFC296EAC6A00ADC43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7DFB296EAC6A00ADC43E /* AppDelegate.swift */; };
 		CECC7DFE296EAC6A00ADC43E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7DFD296EAC6A00ADC43E /* SceneDelegate.swift */; };
 		CECC7E00296EAC6A00ADC43E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7DFF296EAC6A00ADC43E /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 		CE00033D29E42204008406CB /* DoctorDetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailTableCell.swift; sourceTree = "<group>"; };
 		CE00033F29E42227008406CB /* DoctorCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCollectionCell.swift; sourceTree = "<group>"; };
 		CE00034229E426DB008406CB /* AllData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllData.swift; sourceTree = "<group>"; };
+		CE991E9F29E5145A00B58D2B /* ScrollImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollImageCell.swift; sourceTree = "<group>"; };
+		CE991EA129E52B7300B58D2B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		CECC7DF8296EAC6A00ADC43E /* CompanyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC7DFB296EAC6A00ADC43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECC7DFD296EAC6A00ADC43E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +61,7 @@
 				CE00033A29E40F85008406CB /* All Tab */,
 				CE00033829E40F6F008406CB /* MainVc.swift */,
 				CE00033D29E42204008406CB /* DoctorDetailTableCell.swift */,
-				CE00033F29E42227008406CB /* DoctorCollectionCell.swift */,
+				CE991EA129E52B7300B58D2B /* MainTabBarController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -86,6 +90,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		CE991E9E29E5142800B58D2B /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE00033F29E42227008406CB /* DoctorCollectionCell.swift */,
+				CE991E9F29E5145A00B58D2B /* ScrollImageCell.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
 		CECC7DEF296EAC6A00ADC43E = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 		CECC7DFA296EAC6A00ADC43E /* CompanyProject */ = {
 			isa = PBXGroup;
 			children = (
+				CE991E9E29E5142800B58D2B /* CollectionCell */,
 				CE00034129E426C2008406CB /* Data */,
 				CE00033529E40AC6008406CB /* StoryBoards */,
 				CE00033429E40AB6008406CB /* View Controllers */,
@@ -194,10 +208,12 @@
 			files = (
 				CE00033E29E42204008406CB /* DoctorDetailTableCell.swift in Sources */,
 				CE00033C29E40F9A008406CB /* SearchVc.swift in Sources */,
+				CE991EA229E52B7300B58D2B /* MainTabBarController.swift in Sources */,
 				CE00034329E426DB008406CB /* AllData.swift in Sources */,
 				CECC7E00296EAC6A00ADC43E /* ViewController.swift in Sources */,
 				CE00033929E40F6F008406CB /* MainVc.swift in Sources */,
 				CE00034029E42227008406CB /* DoctorCollectionCell.swift in Sources */,
+				CE991EA029E5145A00B58D2B /* ScrollImageCell.swift in Sources */,
 				CECC7DFC296EAC6A00ADC43E /* AppDelegate.swift in Sources */,
 				CECC7DFE296EAC6A00ADC43E /* SceneDelegate.swift in Sources */,
 				CECC7E10296EB51500ADC43E /* Login.swift in Sources */,

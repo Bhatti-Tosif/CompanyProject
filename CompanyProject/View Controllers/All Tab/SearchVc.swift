@@ -10,7 +10,7 @@ import UIKit
 class SearchVc: UIViewController {
     
     //MARK: Outlets
-    @IBOutlet weak var posterImage: UIImageView!
+    @IBOutlet weak var imageScrollCollectionView: UICollectionView!
     @IBOutlet weak var posterPageControll: UIPageControl!
     @IBOutlet weak var doctorTable: UITableView!
     @IBOutlet var headeofTabel: UIView!
@@ -20,8 +20,9 @@ class SearchVc: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //MARK: Image Corner
-        posterImage.layer.cornerRadius = 20
+        //MARK: tag
+        imageScrollCollectionView.tag = 1
+        collectionViewInHeader.tag = 2
         
         //tableView headeView
         doctorTable.tableHeaderView = headeofTabel
@@ -29,6 +30,11 @@ class SearchVc: UIViewController {
         //MARK: Give dataSource Delegate
         doctorTable.dataSource = self
         collectionViewInHeader.dataSource = self
+        imageScrollCollectionView.dataSource = self
+        collectionViewInHeader.delegate = self
+        imageScrollCollectionView.delegate = self
+        
+        
 
     }
     
@@ -44,31 +50,20 @@ class SearchVc: UIViewController {
     */
     
     //MARK: Actions
-    @IBAction func imageChange(_ sender: Any) {
-        switch posterPageControll.currentPage {
-        case 0:
-            posterImage.image = UIImage(named: "poster1")
-        case 1:
-            posterImage.image = UIImage(named: "poster3")
-        case 2:
-            posterImage.image = UIImage(named: "poster1")
-        default:
-            print("Wrong Page Index")
-        }
-    }
+   
 }
 
 //MARK: TableviewDataSource Delegate
 extension SearchVc: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return 5
+        return tableDetail.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = doctorTable.dequeueReusableCell(withIdentifier: DoctorDetailTableCell.tableIdentifier) as? DoctorDetailTableCell else {
             return UITableViewCell()
         }
-        cell.textLabel?.text = "Test"
+        cell.configure(detail: tableDetail[indexPath.row])
         return cell
     }
 }
@@ -76,23 +71,69 @@ extension SearchVc: UITableViewDataSource {
 //MARK: ColleCtionView DataSource
 extension SearchVc: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return collectionDetail.count
+        switch collectionView.tag {
+        case 1:
+            return scrollingImages.count
+        case 2:
+            return collectionDetail.count
+        default:
+            print("Wrong tag")
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let collectionCell = collectionViewInHeader.dequeueReusableCell(withReuseIdentifier: DoctorCollectionCell.collectionIdentifier, for: indexPath) as? DoctorCollectionCell else { return UICollectionViewCell() }
-        
-        collectionCell.configure(detail: collectionDetail[indexPath.row])
-        return collectionCell
+        switch collectionView.tag {
+        case 1:
+            guard let scrollingCell = imageScrollCollectionView.dequeueReusableCell(withReuseIdentifier: ScrollImageCell.imgCellIdentifier, for: indexPath) as? ScrollImageCell else { return UICollectionViewCell() }
+            scrollingCell.scrollImg.image = UIImage(named: scrollingImages[indexPath.row])
+            return scrollingCell
+        case 2:
+            guard let collectionCell = collectionViewInHeader.dequeueReusableCell(withReuseIdentifier: DoctorCollectionCell.collectionIdentifier, for: indexPath) as? DoctorCollectionCell else { return UICollectionViewCell() }
+            collectionCell.configure(detail: collectionDetail[indexPath.row])
+            return collectionCell
+        default:
+            print("Wrong cell")
+        }
+       return UICollectionViewCell()
     }
 }
 
 //MARK: CollectionViewFlowLayoutDelegate
 extension SearchVc: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: view.frame.width / 3 - 20, height: view.frame.height)
+        switch collectionView.tag {
+        case 1:
+            print("case1")
+            return CGSize(width: view.frame.width - 10 , height: view.frame.height)
+        case 2:
+            print("case 2")
+            return CGSize(width: view.frame.width / 3 - 20, height: view.frame.height)
+        default:
+            print("Wrong Size")
+        }
+        return CGSize()
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        switch collectionView.tag {
+        case 1:
+            return 10
+        case 2:
+            return 20
+        default:
+            print("Wrong Size")
+        }
+        return 0
+    }
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        switch collectionView.tag {
+        case 1:
+            posterPageControll.currentPage = indexPath.row
+        case 2:
+            fallthrough
+        default:
+            print("")
+        }
+        
     }
 }
