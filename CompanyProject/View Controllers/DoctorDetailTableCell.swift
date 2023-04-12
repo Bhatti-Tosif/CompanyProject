@@ -7,6 +7,7 @@
 
 import UIKit
 
+//MARK: Structure for Detail
 struct tableData {
     var cellImage: String
     var drName: String
@@ -16,6 +17,7 @@ struct tableData {
 }
 class DoctorDetailTableCell: UITableViewCell {
     
+    //MARK: Variable Declaration
     static var tableIdentifier = "doctorTableCell"
 
     //MARK: Outlets
@@ -26,19 +28,17 @@ class DoctorDetailTableCell: UITableViewCell {
     @IBOutlet weak var rating: UILabel!
     @IBOutlet weak var btnStar: UIButton!
     
+    //MARK: AwakeNib
     override func awakeFromNib() {
         super.awakeFromNib()
-     
         drImg.layer.cornerRadius = 15
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
-
+    //MARK: Actions
     @IBAction func startapped(_ sender: Any) {
         if isSelected {
             btnStar.setImage(UIImage(systemName: "star"), for: .normal)
@@ -49,7 +49,7 @@ class DoctorDetailTableCell: UITableViewCell {
         }
     }
     
-    
+    //MARK: CellConfigure Functions
     func configure(detail: tableData) {
         drImg.image = UIImage(named: detail.cellImage)
         drName.text = detail.drName

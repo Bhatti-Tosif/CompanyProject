@@ -7,24 +7,28 @@
 
 import UIKit
 
+//MARK: Structure for Data
 struct GetStartData {
     var startImg: String
     var lblTitle: String
     var lblSubtitle: String
 }
 class getStartCell: UICollectionViewCell {
-    static let identifier = "getStartCell"
     
+    //MARK: Variable Declaration
+    static let identifier = "getStartCell"
     
     //MARK: Outlets
     @IBOutlet weak var imgForStartScreen: UIImageView!
     @IBOutlet weak var lblForTitle: UILabel!
     @IBOutlet weak var lblForSubtitle: UILabel!
     
+    //MARK: awakeFromNib
     override class func awakeFromNib() {
         super.awakeFromNib()
     }
     
+    //MARK: Cell Configure Methods
     func configure(detail: GetStartData) {
         imgForStartScreen.image = UIImage(named: detail.startImg)
         lblForTitle.text = detail.lblTitle

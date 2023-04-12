@@ -10,18 +10,22 @@ import UIKit
 class GetStartedVc: UIViewController {
 
     //MARK: Outlets
-    
-    @IBOutlet weak var collectionViewforStart: UICollectionView!
+    @IBOutlet weak var startView: UIView!
+    @IBOutlet weak var startImage: UIImageView!
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblSubTitle: UILabel!
     @IBOutlet weak var getStartpageControll: UIPageControl!
     
+    //MARK: Variable Declarations
+    var currentIndex = 0
+    
+    //MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        collectionViewforStart.dataSource = self
-        collectionViewforStart.delegate = self
+        
+        //MARK: Gesture
+        gestureRecognize()
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -32,44 +36,41 @@ class GetStartedVc: UIViewController {
     }
     */
     
-    //MARK: Actions
-    
+    //MARK: All Actions
     @IBAction func getStartPress(_ sender: Any) {
         guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as? MainTabBarController else { return }
         navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
 
-//extension GetStartedVc: UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return getStartDetail.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        guard let startCell = collectionViewforStart.dequeueReusableCell(withReuseIdentifier: getStartCell.identifier, for: indexPath) as? getStartCell else { return UICollectionViewCell() }
-//        //startCell.configure()
-//    }
-//
-//}
-
-extension GetStartedVc: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return getStartDetail.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let startCell = collectionViewforStart.dequeueReusableCell(withReuseIdentifier: getStartCell.identifier, for: indexPath) as? getStartCell else { return UICollectionViewCell() }
-        startCell.configure(detail: getStartDetail[indexPath.row])
+//MARK: Extension Of Itself
+extension GetStartedVc {
+    func gestureRecognize() {
+        let swipeLeft = UISwipeGestureRecognizer()
+        let swipeRight = UISwipeGestureRecognizer()
         
-        return startCell
+        swipeLeft.direction = .left
+        swipeRight.direction = .right
+        
+        startView.addGestureRecognizer(swipeLeft)
+        startView.addGestureRecognizer(swipeRight)
+        
+        swipeLeft.addTarget(self, action: #selector(swipe))
+        swipeRight.addTarget(self, action: #selector(swipe))
     }
     
-    
-}
-extension GetStartedVc: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        getStartpageControll.currentPage = indexPath.row
+    @objc func swipe(sender: UISwipeGestureRecognizer) {
+        switch sender.direction {
+        case .left:
+            currentIndex = currentIndex < 2 ? currentIndex + 1 : 0
+            startImage.image = UIImage(named: getStartDetail[currentIndex].startImg)
+            getStartpageControll.currentPage = currentIndex
+        case .right:
+            currentIndex = currentIndex > 0 ? currentIndex - 1 : 2
+            startImage.image = UIImage(named: getStartDetail[currentIndex].startImg)
+            getStartpageControll.currentPage = currentIndex
+        default:
+            print("false")
+        }
     }
 }

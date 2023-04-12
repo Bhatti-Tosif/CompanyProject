@@ -9,13 +9,13 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
 
+    //MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tabBarController?.selectedIndex = 1
+        //MARK: Open Particular tab directly
+        self.selectedIndex = 2
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -25,5 +25,4 @@ class MainTabBarController: UITabBarController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
