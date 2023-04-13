@@ -24,6 +24,7 @@
 		CECC7E05296EAC6B00ADC43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECC7E04296EAC6B00ADC43E /* Assets.xcassets */; };
 		CECC7E08296EAC6B00ADC43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECC7E06296EAC6B00ADC43E /* LaunchScreen.storyboard */; };
 		CECC7E10296EB51500ADC43E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7E0F296EB51500ADC43E /* Login.swift */; };
+		CEF3B57129E81F5100069C92 /* ConstantHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3B57029E81F5100069C92 /* ConstantHandle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		CECC7E07296EAC6B00ADC43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CECC7E09296EAC6B00ADC43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECC7E0F296EB51500ADC43E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		CEF3B57029E81F5100069C92 /* ConstantHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantHandle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				CE00034229E426DB008406CB /* AllData.swift */,
+				CEF3B57029E81F5100069C92 /* ConstantHandle.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -132,10 +135,7 @@
 		CECC7DFA296EAC6A00ADC43E /* CompanyProject */ = {
 			isa = PBXGroup;
 			children = (
-				CE991E9E29E5142800B58D2B /* CollectionCell */,
-				CE00034129E426C2008406CB /* Data */,
-				CE00033529E40AC6008406CB /* StoryBoards */,
-				CE00033429E40AB6008406CB /* View Controllers */,
+				CEF3B56F29E8022000069C92 /* ReverseKt */,
 				CECC7DFB296EAC6A00ADC43E /* AppDelegate.swift */,
 				CECC7DFD296EAC6A00ADC43E /* SceneDelegate.swift */,
 				CECC7DFF296EAC6A00ADC43E /* ViewController.swift */,
@@ -146,6 +146,17 @@
 				CECC7E0F296EB51500ADC43E /* Login.swift */,
 			);
 			path = CompanyProject;
+			sourceTree = "<group>";
+		};
+		CEF3B56F29E8022000069C92 /* ReverseKt */ = {
+			isa = PBXGroup;
+			children = (
+				CE00033429E40AB6008406CB /* View Controllers */,
+				CE00033529E40AC6008406CB /* StoryBoards */,
+				CE00034129E426C2008406CB /* Data */,
+				CE991E9E29E5142800B58D2B /* CollectionCell */,
+			);
+			path = ReverseKt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 				CECC7E00296EAC6A00ADC43E /* ViewController.swift in Sources */,
 				CE00033929E40F6F008406CB /* MainVc.swift in Sources */,
 				CE00034029E42227008406CB /* DoctorCollectionCell.swift in Sources */,
+				CEF3B57129E81F5100069C92 /* ConstantHandle.swift in Sources */,
 				CE991EA029E5145A00B58D2B /* ScrollImageCell.swift in Sources */,
 				CECC7DFC296EAC6A00ADC43E /* AppDelegate.swift in Sources */,
 				CECC7DFE296EAC6A00ADC43E /* SceneDelegate.swift in Sources */,

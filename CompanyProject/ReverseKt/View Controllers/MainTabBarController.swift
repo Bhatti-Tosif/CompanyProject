@@ -14,7 +14,7 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
 
         //MARK: Open Particular tab directly
-        self.selectedIndex = 2
+        self.selectedIndex = ConstantHandle.tabBarControllerSelectedIndex
     }
     /*
     // MARK: - Navigation

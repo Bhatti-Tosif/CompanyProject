@@ -13,13 +13,13 @@ class ScrollImageCell: UICollectionViewCell {
     static var imgCellIdentifier = "scrollImageCell"
     
     //MARK: Outlets
-    @IBOutlet weak var scrollImg: UIImageView!
-    @IBOutlet weak var container: UIView!
+    @IBOutlet weak var imgScrolling: UIImageView!
+    @IBOutlet weak var containerView: UIView!
     
     //MARK: awakeFromNib
     override func awakeFromNib() {
         super.awakeFromNib()
-        scrollImg.layer.cornerRadius = 20
-        scrollImg.clipsToBounds = true
+        imgScrolling.layer.cornerRadius = ConstantHandle.imgScrollingCornerRadius
+        imgScrolling.clipsToBounds = true
     }
 }

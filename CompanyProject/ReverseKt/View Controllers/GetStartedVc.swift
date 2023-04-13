@@ -11,10 +11,11 @@ class GetStartedVc: UIViewController {
 
     //MARK: Outlets
     @IBOutlet weak var startView: UIView!
-    @IBOutlet weak var startImage: UIImageView!
+    @IBOutlet weak var imgStart: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblSubTitle: UILabel!
-    @IBOutlet weak var getStartpageControll: UIPageControl!
+    @IBOutlet weak var pageControlForStart: UIPageControl!
+    @IBOutlet weak var btnStart: UIButton!
     
     //MARK: Variable Declarations
     var currentIndex = 0
@@ -25,16 +26,10 @@ class GetStartedVc: UIViewController {
         
         //MARK: Gesture
         gestureRecognize()
+        btnStart.layer.cornerRadius = ConstantHandle.btnStartCornerRadius
+        btnStart.clipsToBounds = true
+        
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     //MARK: All Actions
     @IBAction func getStartPress(_ sender: Any) {
@@ -62,13 +57,13 @@ extension GetStartedVc {
     @objc func swipe(sender: UISwipeGestureRecognizer) {
         switch sender.direction {
         case .left:
-            currentIndex = currentIndex < 2 ? currentIndex + 1 : 0
-            startImage.image = UIImage(named: getStartDetail[currentIndex].startImg)
-            getStartpageControll.currentPage = currentIndex
+            currentIndex = currentIndex < scrollingImages.count - 1 ? currentIndex + 1 : 0
+            imgStart.image = UIImage(named: getStartDetail[currentIndex].startImg)
+            pageControlForStart.currentPage = currentIndex
         case .right:
             currentIndex = currentIndex > 0 ? currentIndex - 1 : 2
-            startImage.image = UIImage(named: getStartDetail[currentIndex].startImg)
-            getStartpageControll.currentPage = currentIndex
+            imgStart.image = UIImage(named: getStartDetail[currentIndex].startImg)
+            pageControlForStart.currentPage = currentIndex
         default:
             print("false")
         }

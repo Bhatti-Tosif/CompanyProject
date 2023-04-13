@@ -21,23 +21,19 @@ class DoctorDetailTableCell: UITableViewCell {
     static var tableIdentifier = "doctorTableCell"
 
     //MARK: Outlets
-    @IBOutlet weak var drImg: UIImageView!
-    @IBOutlet weak var drName: UILabel!
-    @IBOutlet weak var drSpecialization: UILabel!
-    @IBOutlet weak var drAddress: UILabel!
-    @IBOutlet weak var rating: UILabel!
+    @IBOutlet weak var imgDr: UIImageView!
+    @IBOutlet weak var lblDrName: UILabel!
+    @IBOutlet weak var lblDrSpecialization: UILabel!
+    @IBOutlet weak var lblDrAddress: UILabel!
+    @IBOutlet weak var lblRating: UILabel!
     @IBOutlet weak var btnStar: UIButton!
     
     //MARK: AwakeNib
     override func awakeFromNib() {
         super.awakeFromNib()
-        drImg.layer.cornerRadius = 15
+        imgDr.layer.cornerRadius = ConstantHandle.imgDrCornerRadius
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
     //MARK: Actions
     @IBAction func startapped(_ sender: Any) {
         if isSelected {
@@ -51,10 +47,10 @@ class DoctorDetailTableCell: UITableViewCell {
     
     //MARK: CellConfigure Functions
     func configure(detail: tableData) {
-        drImg.image = UIImage(named: detail.cellImage)
-        drName.text = detail.drName
-        drSpecialization.text = detail.specialization
-        drAddress.text = detail.address
-        rating.text = detail.rating
+        imgDr.image = UIImage(named: detail.cellImage)
+        lblDrName.text = detail.drName
+        lblDrSpecialization.text = detail.specialization
+        lblDrAddress.text = detail.address
+        lblRating.text = detail.rating
     }
 }
