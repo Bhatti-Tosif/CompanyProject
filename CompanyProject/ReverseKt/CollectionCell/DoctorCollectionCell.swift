@@ -7,11 +7,7 @@
 
 import UIKit
 
-//MARK: Structure for Detail
-struct collectionData {
-    var imageIcone: String
-    var specialization: String
-}
+
 
 class DoctorCollectionCell: UICollectionViewCell {
     
@@ -25,8 +21,22 @@ class DoctorCollectionCell: UICollectionViewCell {
     //MARK: awakeFromNib
     override func awakeFromNib() {
         super.awakeFromNib()
-        imgSpecializeIcone.layer.cornerRadius = imgSpecializeIcone.frame.size.height / 2 - 15
+        //MARK: InitialSetUp call
+        initialSetUp()
     }
+    
+}
+
+//MARK: Extension for Initial SetUp
+extension DoctorCollectionCell {
+    //MARK: Initial SetUp
+    func initialSetUp() {
+        imgSpecializeIcone.layer.cornerRadius = imgSpecializeIcone.frame.size.height / ConstantHandle.imgSpecialiZeIconeCircleDivide - 15
+    }
+}
+
+//MARK: Extension for configure function
+extension DoctorCollectionCell {
     
     //MARK: Cell Configure Functions
     func configure(detail: collectionData) {

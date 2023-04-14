@@ -7,12 +7,6 @@
 
 import UIKit
 
-//MARK: Structure for Data
-struct GetStartData {
-    var startImg: String
-    var lblTitle: String
-    var lblSubtitle: String
-}
 class getStartCell: UICollectionViewCell {
     
     //MARK: Variable Declaration
@@ -27,6 +21,11 @@ class getStartCell: UICollectionViewCell {
     override class func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+}
+
+//MARK: Extension for configureFunction
+extension getStartCell {
     
     //MARK: Cell Configure Methods
     func configure(detail: GetStartData) {

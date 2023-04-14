@@ -9,6 +9,7 @@ import UIKit
 
 class MainVc: UIViewController {
 
+    //MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
 

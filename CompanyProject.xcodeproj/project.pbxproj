@@ -25,6 +25,7 @@
 		CECC7E08296EAC6B00ADC43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECC7E06296EAC6B00ADC43E /* LaunchScreen.storyboard */; };
 		CECC7E10296EB51500ADC43E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7E0F296EB51500ADC43E /* Login.swift */; };
 		CEF3B57129E81F5100069C92 /* ConstantHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3B57029E81F5100069C92 /* ConstantHandle.swift */; };
+		CEF4306429E9361A008211F2 /* All Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4306329E9361A008211F2 /* All Structures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CECC7E09296EAC6B00ADC43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECC7E0F296EB51500ADC43E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		CEF3B57029E81F5100069C92 /* ConstantHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantHandle.swift; sourceTree = "<group>"; };
+		CEF4306329E9361A008211F2 /* All Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "All Structures.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 		CE00033429E40AB6008406CB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE00033A29E40F85008406CB /* All Tab */,
+				CE00033A29E40F85008406CB /* All TabBarController */,
 				CE00033829E40F6F008406CB /* MainVc.swift */,
 				CE00033D29E42204008406CB /* DoctorDetailTableCell.swift */,
 				CE991EA129E52B7300B58D2B /* MainTabBarController.swift */,
@@ -81,12 +83,12 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
-		CE00033A29E40F85008406CB /* All Tab */ = {
+		CE00033A29E40F85008406CB /* All TabBarController */ = {
 			isa = PBXGroup;
 			children = (
 				CE00033B29E40F9A008406CB /* SearchVc.swift */,
 			);
-			path = "All Tab";
+			path = "All TabBarController";
 			sourceTree = "<group>";
 		};
 		CE00034129E426C2008406CB /* Data */ = {
@@ -94,6 +96,7 @@
 			children = (
 				CE00034229E426DB008406CB /* AllData.swift */,
 				CEF3B57029E81F5100069C92 /* ConstantHandle.swift */,
+				CEF4306329E9361A008211F2 /* All Structures.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				CECC7E00296EAC6A00ADC43E /* ViewController.swift in Sources */,
 				CE00033929E40F6F008406CB /* MainVc.swift in Sources */,
 				CE00034029E42227008406CB /* DoctorCollectionCell.swift in Sources */,
+				CEF4306429E9361A008211F2 /* All Structures.swift in Sources */,
 				CEF3B57129E81F5100069C92 /* ConstantHandle.swift in Sources */,
 				CE991EA029E5145A00B58D2B /* ScrollImageCell.swift in Sources */,
 				CECC7DFC296EAC6A00ADC43E /* AppDelegate.swift in Sources */,

@@ -19,6 +19,17 @@ class ScrollImageCell: UICollectionViewCell {
     //MARK: awakeFromNib
     override func awakeFromNib() {
         super.awakeFromNib()
+
+        //MARK: InitailSetUP Call
+        initialSetUp()
+    }
+}
+
+//MARK: Extension for Initial SetUp
+extension ScrollImageCell {
+    
+    //MARK: Initial Setup Function
+    func initialSetUp() {
         imgScrolling.layer.cornerRadius = ConstantHandle.imgScrollingCornerRadius
         imgScrolling.clipsToBounds = true
     }
