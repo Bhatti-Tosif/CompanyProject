@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE234F0129CAC73600DA78CA /* TegB Design.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE234F0029CAC73600DA78CA /* TegB Design.storyboard */; };
+		CE234F0329CACB2500DA78CA /* TegBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE234F0229CACB2500DA78CA /* TegBViewController.swift */; };
+		CE234F0529CB0F2200DA78CA /* LeaveOffsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE234F0429CB0F2200DA78CA /* LeaveOffsetViewController.swift */; };
+		CE234F0729CB189A00DA78CA /* CustomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE234F0629CB189A00DA78CA /* CustomeTableViewCell.swift */; };
+		CE7EA1B029D17BB000E587A0 /* InviteWizardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EA1AF29D17BB000E587A0 /* InviteWizardViewController.swift */; };
+		CE7EA1B229D181B300E587A0 /* InviteWizardTablecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EA1B129D181B300E587A0 /* InviteWizardTablecell.swift */; };
+		CE7EA1B429D1822E00E587A0 /* InviteWizardCollectionCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EA1B329D1822E00E587A0 /* InviteWizardCollectionCellCollectionViewCell.swift */; };
+		CE7EA1BC29D1AF6A00E587A0 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7EA1BB29D1AF6A00E587A0 /* StatusBar.swift */; };
+		CE9A533F29CC23C400CD3955 /* TableViewPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9A533E29CC23C400CD3955 /* TableViewPractice.storyboard */; };
+		CE9A534329CC261700CD3955 /* TableViewPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A534229CC261700CD3955 /* TableViewPracticeViewController.swift */; };
+		CE9A534529CC28CB00CD3955 /* PracticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A534429CC28CB00CD3955 /* PracticeTableViewCell.swift */; };
 		CECC7DFC296EAC6A00ADC43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7DFB296EAC6A00ADC43E /* AppDelegate.swift */; };
 		CECC7DFE296EAC6A00ADC43E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7DFD296EAC6A00ADC43E /* SceneDelegate.swift */; };
 		CECC7E00296EAC6A00ADC43E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7DFF296EAC6A00ADC43E /* ViewController.swift */; };
@@ -14,9 +25,30 @@
 		CECC7E05296EAC6B00ADC43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECC7E04296EAC6B00ADC43E /* Assets.xcassets */; };
 		CECC7E08296EAC6B00ADC43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECC7E06296EAC6B00ADC43E /* LaunchScreen.storyboard */; };
 		CECC7E10296EB51500ADC43E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7E0F296EB51500ADC43E /* Login.swift */; };
+		CECF02D129D2A08600823714 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CECF02CD29D2A08600823714 /* Poppins-Medium.ttf */; };
+		CECF02D229D2A08600823714 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CECF02CE29D2A08600823714 /* Poppins-Regular.ttf */; };
+		CECF02D329D2A08600823714 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CECF02CF29D2A08600823714 /* Poppins-Bold.ttf */; };
+		CECF02D429D2A08600823714 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CECF02D029D2A08600823714 /* Poppins-SemiBold.ttf */; };
+		CECF02D629D2F93C00823714 /* InviteWizardUserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF02D529D2F93C00823714 /* InviteWizardUserTask.swift */; };
+		CEE8D3AA29CD63CB00FBDCA4 /* ParkingLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8D3A929CD63CB00FBDCA4 /* ParkingLocationVC.swift */; };
+		CEE8D3AC29CD65C400FBDCA4 /* ParkingLocationDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8D3AB29CD65C400FBDCA4 /* ParkingLocationDataTableViewCell.swift */; };
+		CEE8D3AE29CDBEBC00FBDCA4 /* Invite Wizards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE8D3AD29CDBEBC00FBDCA4 /* Invite Wizards.storyboard */; };
+		CEFF244929C84D1100D795ED /* AutoLayoutPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFF244829C84D1100D795ED /* AutoLayoutPractice.storyboard */; };
+		CEFF244C29C85ADD00D795ED /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF244B29C85ADD00D795ED /* FirstScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE234F0029CAC73600DA78CA /* TegB Design.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "TegB Design.storyboard"; sourceTree = "<group>"; };
+		CE234F0229CACB2500DA78CA /* TegBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TegBViewController.swift; sourceTree = "<group>"; };
+		CE234F0429CB0F2200DA78CA /* LeaveOffsetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveOffsetViewController.swift; sourceTree = "<group>"; };
+		CE234F0629CB189A00DA78CA /* CustomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTableViewCell.swift; sourceTree = "<group>"; };
+		CE7EA1AF29D17BB000E587A0 /* InviteWizardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteWizardViewController.swift; sourceTree = "<group>"; };
+		CE7EA1B129D181B300E587A0 /* InviteWizardTablecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteWizardTablecell.swift; sourceTree = "<group>"; };
+		CE7EA1B329D1822E00E587A0 /* InviteWizardCollectionCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteWizardCollectionCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE7EA1BB29D1AF6A00E587A0 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		CE9A533E29CC23C400CD3955 /* TableViewPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewPractice.storyboard; sourceTree = "<group>"; };
+		CE9A534229CC261700CD3955 /* TableViewPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPracticeViewController.swift; sourceTree = "<group>"; };
+		CE9A534429CC28CB00CD3955 /* PracticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableViewCell.swift; sourceTree = "<group>"; };
 		CECC7DF8296EAC6A00ADC43E /* CompanyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC7DFB296EAC6A00ADC43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECC7DFD296EAC6A00ADC43E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +58,16 @@
 		CECC7E07296EAC6B00ADC43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CECC7E09296EAC6B00ADC43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECC7E0F296EB51500ADC43E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		CECF02CD29D2A08600823714 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		CECF02CE29D2A08600823714 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		CECF02CF29D2A08600823714 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		CECF02D029D2A08600823714 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		CECF02D529D2F93C00823714 /* InviteWizardUserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteWizardUserTask.swift; sourceTree = "<group>"; };
+		CEE8D3A929CD63CB00FBDCA4 /* ParkingLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLocationVC.swift; sourceTree = "<group>"; };
+		CEE8D3AB29CD65C400FBDCA4 /* ParkingLocationDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLocationDataTableViewCell.swift; sourceTree = "<group>"; };
+		CEE8D3AD29CDBEBC00FBDCA4 /* Invite Wizards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Invite Wizards.storyboard"; sourceTree = "<group>"; };
+		CEFF244829C84D1100D795ED /* AutoLayoutPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutPractice.storyboard; sourceTree = "<group>"; };
+		CEFF244B29C85ADD00D795ED /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE7EA1B629D1ABA400E587A0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		CECC7DEF296EAC6A00ADC43E = {
 			isa = PBXGroup;
 			children = (
+				CECF02C929D29FE900823714 /* Fonts */,
+				CE7EA1B629D1ABA400E587A0 /* Utils */,
+				CEE8D3A829CD637500FBDCA4 /* Models */,
+				CEE8D3A729CD634000FBDCA4 /* Extensions */,
+				CEE8D3A529CD631600FBDCA4 /* Modules */,
+				CEFF244A29C85A8C00D795ED /* ViewControllers */,
+				CEFF244729C84C9C00D795ED /* UIPractices */,
 				CECC7DFA296EAC6A00ADC43E /* CompanyProject */,
 				CECC7DF9296EAC6A00ADC43E /* Products */,
 			);
@@ -68,6 +124,78 @@
 				CECC7E0F296EB51500ADC43E /* Login.swift */,
 			);
 			path = CompanyProject;
+			sourceTree = "<group>";
+		};
+		CECF02C929D29FE900823714 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CECF02CC29D2A08600823714 /* Popins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CECF02CC29D2A08600823714 /* Popins */ = {
+			isa = PBXGroup;
+			children = (
+				CECF02CD29D2A08600823714 /* Poppins-Medium.ttf */,
+				CECF02CE29D2A08600823714 /* Poppins-Regular.ttf */,
+				CECF02CF29D2A08600823714 /* Poppins-Bold.ttf */,
+				CECF02D029D2A08600823714 /* Poppins-SemiBold.ttf */,
+			);
+			name = Popins;
+			path = ../../../../Downloads/Popins;
+			sourceTree = "<group>";
+		};
+		CEE8D3A529CD631600FBDCA4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CEE8D3A729CD634000FBDCA4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE7EA1BB29D1AF6A00E587A0 /* StatusBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEE8D3A829CD637500FBDCA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEE8D3AB29CD65C400FBDCA4 /* ParkingLocationDataTableViewCell.swift */,
+				CE7EA1B129D181B300E587A0 /* InviteWizardTablecell.swift */,
+				CE7EA1B329D1822E00E587A0 /* InviteWizardCollectionCellCollectionViewCell.swift */,
+				CECF02D529D2F93C00823714 /* InviteWizardUserTask.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEFF244729C84C9C00D795ED /* UIPractices */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF244829C84D1100D795ED /* AutoLayoutPractice.storyboard */,
+				CE234F0029CAC73600DA78CA /* TegB Design.storyboard */,
+				CE9A533E29CC23C400CD3955 /* TableViewPractice.storyboard */,
+				CEE8D3AD29CDBEBC00FBDCA4 /* Invite Wizards.storyboard */,
+			);
+			path = UIPractices;
+			sourceTree = "<group>";
+		};
+		CEFF244A29C85A8C00D795ED /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF244B29C85ADD00D795ED /* FirstScreen.swift */,
+				CE234F0229CACB2500DA78CA /* TegBViewController.swift */,
+				CE234F0429CB0F2200DA78CA /* LeaveOffsetViewController.swift */,
+				CE234F0629CB189A00DA78CA /* CustomeTableViewCell.swift */,
+				CE9A534229CC261700CD3955 /* TableViewPracticeViewController.swift */,
+				CE9A534429CC28CB00CD3955 /* PracticeTableViewCell.swift */,
+				CEE8D3A929CD63CB00FBDCA4 /* ParkingLocationVC.swift */,
+				CE7EA1AF29D17BB000E587A0 /* InviteWizardViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +258,15 @@
 			files = (
 				CECC7E08296EAC6B00ADC43E /* LaunchScreen.storyboard in Resources */,
 				CECC7E05296EAC6B00ADC43E /* Assets.xcassets in Resources */,
+				CECF02D429D2A08600823714 /* Poppins-SemiBold.ttf in Resources */,
+				CEFF244929C84D1100D795ED /* AutoLayoutPractice.storyboard in Resources */,
+				CECF02D229D2A08600823714 /* Poppins-Regular.ttf in Resources */,
 				CECC7E03296EAC6A00ADC43E /* Main.storyboard in Resources */,
+				CEE8D3AE29CDBEBC00FBDCA4 /* Invite Wizards.storyboard in Resources */,
+				CECF02D129D2A08600823714 /* Poppins-Medium.ttf in Resources */,
+				CECF02D329D2A08600823714 /* Poppins-Bold.ttf in Resources */,
+				CE234F0129CAC73600DA78CA /* TegB Design.storyboard in Resources */,
+				CE9A533F29CC23C400CD3955 /* TableViewPractice.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +277,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7EA1BC29D1AF6A00E587A0 /* StatusBar.swift in Sources */,
+				CE234F0729CB189A00DA78CA /* CustomeTableViewCell.swift in Sources */,
+				CEE8D3AA29CD63CB00FBDCA4 /* ParkingLocationVC.swift in Sources */,
+				CE7EA1B229D181B300E587A0 /* InviteWizardTablecell.swift in Sources */,
+				CE234F0329CACB2500DA78CA /* TegBViewController.swift in Sources */,
+				CE7EA1B429D1822E00E587A0 /* InviteWizardCollectionCellCollectionViewCell.swift in Sources */,
+				CE234F0529CB0F2200DA78CA /* LeaveOffsetViewController.swift in Sources */,
+				CECF02D629D2F93C00823714 /* InviteWizardUserTask.swift in Sources */,
 				CECC7E00296EAC6A00ADC43E /* ViewController.swift in Sources */,
 				CECC7DFC296EAC6A00ADC43E /* AppDelegate.swift in Sources */,
+				CE9A534329CC261700CD3955 /* TableViewPracticeViewController.swift in Sources */,
+				CE7EA1B029D17BB000E587A0 /* InviteWizardViewController.swift in Sources */,
+				CE9A534529CC28CB00CD3955 /* PracticeTableViewCell.swift in Sources */,
 				CECC7DFE296EAC6A00ADC43E /* SceneDelegate.swift in Sources */,
 				CECC7E10296EB51500ADC43E /* Login.swift in Sources */,
+				CEFF244C29C85ADD00D795ED /* FirstScreen.swift in Sources */,
+				CEE8D3AC29CD65C400FBDCA4 /* ParkingLocationDataTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +445,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,6 +473,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
