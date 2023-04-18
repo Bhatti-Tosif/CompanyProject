@@ -11,9 +11,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let storyBoard = UIStoryboard(name: "NavPractice", bundle: nil)
+        let NavPracticeVC = storyBoard.instantiateViewController(withIdentifier: "NavPracticeVC") as UIViewController
+        
+        let navigation = UINavigationController(rootViewController: NavPracticeVC)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        if let window = window {
+            window.rootViewController = navigation
+            window.makeKeyAndVisible()
+        }
         return true
     }
 
