@@ -17,12 +17,12 @@ struct ParkingData {
 class ParkingLocationDataTableViewCell: UITableViewCell {
     
     //MARK: Outlets
-    @IBOutlet weak var carImage: UIImageView!
-    @IBOutlet weak var parkingCode: UILabel!
-    @IBOutlet weak var parkingName: UILabel!
-    @IBOutlet weak var parkingAddress: UILabel!
-    @IBOutlet weak var selectedArrow: UIImageView!
-    @IBOutlet weak var OutercellView: UIView!
+    @IBOutlet private weak var carImage: UIImageView!
+    @IBOutlet private weak var parkingCode: UILabel!
+    @IBOutlet private weak var parkingName: UILabel!
+    @IBOutlet private weak var parkingAddress: UILabel!
+    @IBOutlet private weak var selectedArrow: UIImageView!
+    @IBOutlet private weak var OutercellView: UIView!
     
   
     
@@ -32,9 +32,10 @@ class ParkingLocationDataTableViewCell: UITableViewCell {
 //
 //        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0))
 //    }
+    
+    //MARK: LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -49,10 +50,10 @@ class ParkingLocationDataTableViewCell: UITableViewCell {
         
         OutercellView.layer.borderWidth = selected ? 1 : 0
         OutercellView.layer.borderColor = selected ? UIColor(named: "deepAqua")?.cgColor : UIColor(named: "white")?.cgColor
-
-        // Configure the view for the selected state
         
     }
+    
+    //MARK: Configure Cell
     func configure(data: ParkingData) {
         carImage.image = UIImage(named: data.carImage)
         parkingCode.text = data.parkingCode

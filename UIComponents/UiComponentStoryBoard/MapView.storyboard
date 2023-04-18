@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location Vc-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CLLocationVc" id="Y6W-OH-hqX" customClass="CLLocationVc" customModule="CompanyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQF-vk-gM1">
+                                <rect key="frame" x="158.33333333333334" y="159" width="76.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03X-hU-Qdv">
+                                <rect key="frame" x="165.33333333333334" y="230" width="62.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IO9-ea-v9u">
+                                <rect key="frame" x="136" y="408.66666666666669" width="121" height="35"/>
+                                <color key="backgroundColor" name="deepAqua"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Location" cornerStyle="capsule">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getLocation:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0Yt-cV-mh2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gQF-vk-gM1" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="50Z-V8-q19"/>
+                            <constraint firstItem="03X-hU-Qdv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7yc-eA-0gG"/>
+                            <constraint firstItem="gQF-vk-gM1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="IVO-tj-O2A"/>
+                            <constraint firstItem="IO9-ea-v9u" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Xqe-q7-6mn"/>
+                            <constraint firstItem="IO9-ea-v9u" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="tuc-W6-9o4"/>
+                            <constraint firstItem="03X-hU-Qdv" firstAttribute="top" secondItem="gQF-vk-gM1" secondAttribute="bottom" constant="50" id="y8Z-no-yCL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="latitude" destination="03X-hU-Qdv" id="XNR-xg-XXZ"/>
+                        <outlet property="longitude" destination="gQF-vk-gM1" id="lnv-wk-rie"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+        <!--Map View Vc-->
+        <scene sceneID="SUb-zE-9Ky">
+            <objects>
+                <viewController storyboardIdentifier="MapViewVc" id="ioj-5b-uCl" customClass="MapViewVc" customModule="CompanyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="znq-vt-HdB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0q-Fs-AWr">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="gwv-6L-SFl">
+                                <rect key="frame" x="10" y="69" width="373" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="23.003496716136148" borderStyle="roundedRect" placeholder="Latitude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UC9-eD-SvW">
+                                        <rect key="frame" x="0.0" y="0.0" width="151.66666666666666" height="34"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="72.53359171841169" borderStyle="roundedRect" placeholder="Longitude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LjG-Mu-CUg">
+                                        <rect key="frame" x="221.66666666666663" y="0.0" width="151.33333333333337" height="34"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="99" translatesAutoresizingMaskIntoConstraints="NO" id="rRe-ge-AHM">
+                                <rect key="frame" x="10" y="763.66666666666663" width="373" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gY-9g-imn">
+                                        <rect key="frame" x="0.0" y="0.0" width="100.66666666666667" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Direction"/>
+                                        <connections>
+                                            <action selector="directionClick:" destination="ioj-5b-uCl" eventType="touchUpInside" id="RHS-li-3nd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWb-Qk-peJ">
+                                        <rect key="frame" x="199.66666666666663" y="0.0" width="173.33333333333337" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Current Location"/>
+                                        <connections>
+                                            <action selector="currentLocationTapped:" destination="ioj-5b-uCl" eventType="touchUpInside" id="eef-cs-bTI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WSo-aE-fFc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gwv-6L-SFl" firstAttribute="leading" secondItem="WSo-aE-fFc" secondAttribute="leading" constant="10" id="2Ym-LG-vWd"/>
+                            <constraint firstItem="gwv-6L-SFl" firstAttribute="top" secondItem="WSo-aE-fFc" secondAttribute="top" constant="10" id="5tZ-ph-fwf"/>
+                            <constraint firstItem="WSo-aE-fFc" firstAttribute="bottom" secondItem="E0q-Fs-AWr" secondAttribute="bottom" id="7Kp-FY-T1C"/>
+                            <constraint firstItem="WSo-aE-fFc" firstAttribute="trailing" secondItem="rRe-ge-AHM" secondAttribute="trailing" constant="10" id="HIS-5W-dzC"/>
+                            <constraint firstItem="E0q-Fs-AWr" firstAttribute="top" secondItem="WSo-aE-fFc" secondAttribute="top" id="OEI-vW-B0N"/>
+                            <constraint firstItem="WSo-aE-fFc" firstAttribute="trailing" secondItem="gwv-6L-SFl" secondAttribute="trailing" constant="10" id="Rnz-X0-C7J"/>
+                            <constraint firstItem="E0q-Fs-AWr" firstAttribute="leading" secondItem="WSo-aE-fFc" secondAttribute="leading" id="YZ9-BC-kpV"/>
+                            <constraint firstItem="WSo-aE-fFc" firstAttribute="bottom" secondItem="rRe-ge-AHM" secondAttribute="bottom" constant="20" id="dGu-4e-qW6"/>
+                            <constraint firstItem="WSo-aE-fFc" firstAttribute="trailing" secondItem="E0q-Fs-AWr" secondAttribute="trailing" id="ivW-L3-zYI"/>
+                            <constraint firstItem="rRe-ge-AHM" firstAttribute="leading" secondItem="znq-vt-HdB" secondAttribute="leading" constant="10" id="s9L-qR-GfB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="latitudeTextField" destination="UC9-eD-SvW" id="yb0-qc-Ot9"/>
+                        <outlet property="longitudeTextField" destination="LjG-Mu-CUg" id="3jY-eW-2GC"/>
+                        <outlet property="mapView" destination="E0q-Fs-AWr" id="i1N-O4-UKO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iu0-E9-K2N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="deepAqua">
+            <color red="0.027450980392156862" green="0.45882352941176469" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

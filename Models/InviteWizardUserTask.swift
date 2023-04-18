@@ -15,21 +15,18 @@ struct SectionHeader {
 class InviteWizardUserTask: UITableViewCell {
 
     //MARK: Outlets
-    @IBOutlet weak var headerText: UILabel!
-    @IBOutlet weak var sectionMessage: UILabel!
-    @IBOutlet weak var openedDate: UILabel!
+    @IBOutlet private weak var headerText: UILabel!
+    @IBOutlet private weak var sectionMessage: UILabel!
+    @IBOutlet private weak var openedDate: UILabel!
+    @IBOutlet private weak var headerView: UIView!
+    @IBOutlet private weak var sectionView: UIView!
+    @IBOutlet private weak var upButton: UIImageView!
+    @IBOutlet private weak var downImage: UIImageView!
     
-    @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var sectionView: UIView!
-    
-    @IBOutlet weak var upButton: UIImageView!
-    @IBOutlet weak var downImage: UIImageView!
-    
+    //MARK: LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         sectionView.isHidden = true
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -45,9 +42,9 @@ class InviteWizardUserTask: UITableViewCell {
             downImage.isHidden = false
         }
 
-        // Configure the view for the selected state
     }
 
+    //MARK: Configure Cell
     func configureTask(task: SectionHeader) {
         headerText.text = task.headerName
         sectionMessage.text = task.sectionMessage
