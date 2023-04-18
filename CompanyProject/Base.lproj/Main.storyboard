@@ -16,7 +16,6 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CompanyProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -29,9 +28,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSs-68-Zpq">
-                                <rect key="frame" x="157" y="423" width="79" height="38"/>
+                                <rect key="frame" x="93" y="371" width="207" height="142"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click">
+                                <buttonConfiguration key="configuration" style="plain" image="ci" title="Click">
                                     <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -50,6 +49,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="qaB-uQ-uyU"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="675.57251908396938" y="33.802816901408455"/>
         </scene>
@@ -101,6 +101,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ci" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

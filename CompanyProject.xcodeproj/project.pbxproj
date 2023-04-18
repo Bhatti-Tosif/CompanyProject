@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE653D5A29ED22C000AA688F /* NavPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE653D5929ED22C000AA688F /* NavPractice.storyboard */; };
+		CE653D5C29ED234B00AA688F /* NavPracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE653D5B29ED234B00AA688F /* NavPracticeVC.swift */; };
+		CE653D5E29ED269800AA688F /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE653D5D29ED269800AA688F /* ThirdVC.swift */; };
 		CECC7DFC296EAC6A00ADC43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7DFB296EAC6A00ADC43E /* AppDelegate.swift */; };
 		CECC7DFE296EAC6A00ADC43E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7DFD296EAC6A00ADC43E /* SceneDelegate.swift */; };
 		CECC7E00296EAC6A00ADC43E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC7DFF296EAC6A00ADC43E /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE653D5929ED22C000AA688F /* NavPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavPractice.storyboard; sourceTree = "<group>"; };
+		CE653D5B29ED234B00AA688F /* NavPracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavPracticeVC.swift; sourceTree = "<group>"; };
+		CE653D5D29ED269800AA688F /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		CECC7DF8296EAC6A00ADC43E /* CompanyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC7DFB296EAC6A00ADC43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECC7DFD296EAC6A00ADC43E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE653D5729ED228E00AA688F /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				CE653D5929ED22C000AA688F /* NavPractice.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		CE653D5829ED229800AA688F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE653D5B29ED234B00AA688F /* NavPracticeVC.swift */,
+				CE653D5D29ED269800AA688F /* ThirdVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		CECC7DEF296EAC6A00ADC43E = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +81,8 @@
 		CECC7DFA296EAC6A00ADC43E /* CompanyProject */ = {
 			isa = PBXGroup;
 			children = (
+				CE653D5829ED229800AA688F /* ViewControllers */,
+				CE653D5729ED228E00AA688F /* StoryBoards */,
 				CECC7DFB296EAC6A00ADC43E /* AppDelegate.swift */,
 				CECC7DFD296EAC6A00ADC43E /* SceneDelegate.swift */,
 				CECC7DFF296EAC6A00ADC43E /* ViewController.swift */,
@@ -129,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECC7E08296EAC6B00ADC43E /* LaunchScreen.storyboard in Resources */,
+				CE653D5A29ED22C000AA688F /* NavPractice.storyboard in Resources */,
 				CECC7E05296EAC6B00ADC43E /* Assets.xcassets in Resources */,
 				CECC7E03296EAC6A00ADC43E /* Main.storyboard in Resources */,
 			);
@@ -141,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE653D5E29ED269800AA688F /* ThirdVC.swift in Sources */,
 				CECC7E00296EAC6A00ADC43E /* ViewController.swift in Sources */,
 				CECC7DFC296EAC6A00ADC43E /* AppDelegate.swift in Sources */,
+				CE653D5C29ED234B00AA688F /* NavPracticeVC.swift in Sources */,
 				CECC7DFE296EAC6A00ADC43E /* SceneDelegate.swift in Sources */,
 				CECC7E10296EB51500ADC43E /* Login.swift in Sources */,
 			);
