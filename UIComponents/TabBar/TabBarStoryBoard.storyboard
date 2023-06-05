@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Download Vc-->
+        <scene sceneID="vqV-1x-37e">
+            <objects>
+                <viewController storyboardIdentifier="DownloadVc" id="gSg-r5-dwk" customClass="DownloadVc" customModule="CompanyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tfe-u7-Sth">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MaW-Pv-JxS"/>
+                        <color key="backgroundColor" name="lightBlueGrey - Two"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="eph-2s-Ihg"/>
+                    <connections>
+                        <outlet property="downloadOutlet" destination="eph-2s-Ihg" id="hD7-mn-IYG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNs-s1-z6P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-782" y="487"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="fj7-VV-I0w">
+            <objects>
+                <viewController storyboardIdentifier="HomeVc" id="bev-Er-Zfw" customClass="HomeVc" customModule="CompanyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FA7-Gw-Jbb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBi-Zh-XK7">
+                                <rect key="frame" x="115.66666666666669" y="407" width="162" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Download Item">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="downloadClick:" destination="bev-Er-Zfw" eventType="touchUpInside" id="nfm-YI-7vM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ze3-R7-Wgk"/>
+                        <color key="backgroundColor" name="Light Sky"/>
+                        <constraints>
+                            <constraint firstItem="PBi-Zh-XK7" firstAttribute="centerY" secondItem="FA7-Gw-Jbb" secondAttribute="centerY" id="V0a-x1-Ly1"/>
+                            <constraint firstItem="PBi-Zh-XK7" firstAttribute="centerX" secondItem="FA7-Gw-Jbb" secondAttribute="centerX" id="xw0-TL-6P9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="yWN-Tn-Ryi">
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
+                        <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="large" variableValue="1"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cfb-bP-XZN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="139"/>
+        </scene>
+        <!--History Vc-->
+        <scene sceneID="lK3-u2-BBt">
+            <objects>
+                <viewController storyboardIdentifier="HistoryVc" id="hW2-d8-rEH" customClass="HistoryVc" customModule="CompanyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xUH-IP-z8a">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="05w-db-u5h"/>
+                        <color key="backgroundColor" name="lightBlueGrey - Two"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="y3f-K9-pBK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LuG-HM-00D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="-527"/>
+        </scene>
+        <!--Tab Bar Controller Vc-->
+        <scene sceneID="1vh-ob-gy2">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarControllerVc" id="TCr-Md-gEa" customClass="TabBarControllerVc" customModule="CompanyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="K0Y-3Q-oeu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="deepAqua"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hW2-d8-rEH" kind="relationship" relationship="viewControllers" id="eg3-ff-fPi"/>
+                        <segue destination="bev-Er-Zfw" kind="relationship" relationship="viewControllers" id="YBc-LP-R4b"/>
+                        <segue destination="gSg-r5-dwk" kind="relationship" relationship="viewControllers" id="Lnc-SH-QFy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGs-2p-arI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781" y="-223"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <namedColor name="Light Sky">
+            <color red="0.47499999403953552" green="0.85500001907348633" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="deepAqua">
+            <color red="0.027450980392156862" green="0.45882352941176469" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightBlueGrey - Two">
+            <color red="0.84705882352941175" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
